@@ -1,8 +1,8 @@
-import Root from '../../../../Root';
-import ShelfHeader from '..';
-import Sort from '../../Sort';
+import Root from "../../../../Root";
+import ShelfHeader from "..";
+import Sort from "../../Sort";
 
-it('shows a sort component', () => {
+it("shows a sort component", () => {
   const wrapped = mount(
     <Root>
       <ShelfHeader productsLength={10} />

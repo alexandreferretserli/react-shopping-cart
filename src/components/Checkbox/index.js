@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 class Checkbox extends Component {
   static propTypes = {
     label: PropTypes.string.isRequired,
-    handleCheckboxChange: PropTypes.func.isRequired
+    handleCheckboxChange: PropTypes.func.isRequired,
+    classes: PropTypes.string.isRequired
   };
 
   state = {

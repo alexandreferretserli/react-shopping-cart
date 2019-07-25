@@ -28,11 +28,11 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
         );
       }
 
-      if (!!sortBy) {
+      if (sortBy) {
         products = products.sort(compare[sortBy]);
       }
 
-      if (!!callback) {
+      if (callback) {
         callback();
       }
 
@@ -43,5 +43,6 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
     })
     .catch(err => {
       console.log('Could not fetch products. Try again later.');
+      console.log(err.getMessage())
     });
 };

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './style.scss';
+import "./style.scss";
 
-export default () => (
+export const Spinner = () => (
   <div className="spinner lds-ring">
     <div />
     <div />

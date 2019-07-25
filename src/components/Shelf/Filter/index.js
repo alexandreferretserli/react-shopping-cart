@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import { connect } from 'react-redux';
-import { updateFilters } from '../../../services/filters/actions';
-import Checkbox from '../../Checkbox';
-import GithubStarButton from '../../github/StarButton';
+import { connect } from "react-redux";
+import { updateFilters } from "../../../services/filters/actions";
+import Checkbox from "../../Checkbox";
+import GithubStarButton from "../../github/StarButton";
 
-import './style.scss';
+import "./style.scss";
+import TestRules from "../../TestRules";
 
-const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
+const availableSizes = ["XS", "S", "M", "ML", "L", "XL", "XXL"];
 
 class Filter extends Component {
   static propTypes = {
@@ -47,6 +48,7 @@ class Filter extends Component {
         <h4 className="title">Sizes:</h4>
         {this.createCheckboxes()}
         <GithubStarButton />
+        <TestRules />
       </div>
     );
   }

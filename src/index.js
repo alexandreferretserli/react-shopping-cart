@@ -1,15 +1,15 @@
-import 'babel-polyfill'
-import React from 'react';
-import ReactDOM from 'react-dom';
+import "babel-polyfill";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './components/App';
-import Root from './Root';
+import App from "./components/App";
+import Root from "./Root";
 
-import './index.scss';
+import "./index.scss";
 
 ReactDOM.render(
   <Root>
     <App />
   </Root>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

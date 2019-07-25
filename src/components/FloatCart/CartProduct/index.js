@@ -27,7 +27,7 @@ class CartProduct extends Component {
 
     const classes = ['shelf-item'];
 
-    if (!!this.state.isMouseOver) {
+    if (this.state.isMouseOver) {
       classes.push('shelf-item--mouseover');
     }
 

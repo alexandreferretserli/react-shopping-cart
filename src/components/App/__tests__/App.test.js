@@ -1,8 +1,8 @@
-import Root from '../../../Root';
-import App from '../';
+import Root from "../../../Root";
+import App from "../";
 
-import Shelf from '../../Shelf';
-import FloatCart from '../../FloatCart';
+import Shelf from "../../Shelf";
+import FloatCart from "../../FloatCart";
 
 let wrapped;
 
@@ -18,10 +18,10 @@ afterEach(() => {
   wrapped.unmount();
 });
 
-it('shows a shelf', () => {
+it("shows a shelf", () => {
   expect(wrapped.find(Shelf).length).toEqual(1);
 });
 
-it('shows a floating cart', () => {
+it("shows a floating cart", () => {
   expect(wrapped.find(FloatCart).length).toEqual(1);
 });

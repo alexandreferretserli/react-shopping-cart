@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { fetchProducts } from '../../services/shelf/actions';
 
-import Spinner from '../Spinner';
+import { Spinner } from '../Spinner';
 import ShelfHeader from './ShelfHeader';
 import ProductList from './ProductList';
 

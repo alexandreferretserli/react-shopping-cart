@@ -11,7 +11,7 @@ const sortBy = [
   { value: 'highestprice', label: 'Highest to lowest' }
 ];
 
-const Sort = ({ updateSort, sort }) => (
+const Sort = ({ updateSort }) => (
   <div className="sort">
     Order by
     <Selectbox options={sortBy} handleOnChange={value => updateSort(value)} />

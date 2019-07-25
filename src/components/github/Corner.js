@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-export default () => (
+export const Corner = () => (
   <a
     href="https://github.com/jeffersonRibeiro/react-shopping-cart"
     className="github-corner"
