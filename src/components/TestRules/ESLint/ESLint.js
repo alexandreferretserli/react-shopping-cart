@@ -70,7 +70,7 @@ export const testESLintRules = () => {
    *  console.log("testNoOctal: " + testNoOctal);
    */
 
-  const testNoOctal = "071";
+  const testNoOctal = 071;
   console.log("testNoOctal: " + testNoOctal);
 
   /** ESLint: no-with
